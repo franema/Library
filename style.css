@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+header {
+    padding: 1vw ;
+}
+
+.form-container {
+    position: absolute;
+    visibility:hidden;
+    top: 50vh;
+    left: 50vw;
+    margin-top: -180px;
+    margin-left: -170px;
+    z-index: 1;
+    background-color: rgb(155, 182, 182);
+}
+
+form {
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+form input {
+    max-width: 10vw;
+}
+
+.board {
+    display: grid;
+    grid-template: 100px 1fr / 1fr ;
+    background-color: aliceblue;
+    height: 80vh;
+    border-top: 1px solid grey;
+}
+
+.add-book_button {
+    justify-self: center;
+    align-self: center;
+    border: 1px solid grey;
+    background-color: aliceblue;
+    border-radius: 6px;
+}
+
+
+
+.books-container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 3vw;
+    padding: 5vw;
+}
+
+.book {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr ;
+    border: 1px solid grey;
+    border-radius: 6px;
+    justify-items: center;
+    align-items: center;
+    padding: 5vw 2vw;
+}
